@@ -1,0 +1,193 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* ===== Header & Navigation ===== */
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 1.6rem;
+}
+
+nav a {
+  color: white;
+  margin-left: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+  background: #34495e;
+}
+
+/* ===== Layout ===== */
+main {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  padding: 1.2rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  margin-bottom: 1.2rem;
+}
+
+.card h2, .card h3 {
+  margin-bottom: 0.6rem;
+  color: #2c3e50;
+}
+
+/* ===== Summary Cards (Dashboard) ===== */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.summary-grid .card {
+  text-align: center;
+}
+
+.summary-grid .count {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* ===== Forms (Add Task) ===== */
+form label {
+  display: block;
+  margin-top: 0.8rem;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* ===== Buttons ===== */
+button, .btn {
+  display: inline-block;
+  background: #2c3e50;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  text-decoration: none;
+}
+
+button:hover, .btn:hover {
+  background: #1a252f;
+}
+
+.btn-danger {
+  background: #c0392b;
+}
+
+.btn-danger:hover {
+  background: #962d22;
+}
+
+/* ===== Table (Task List) ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.7rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background: #2c3e50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+/* ===== Status Badges ===== */
+.status {
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: white;
+}
+
+.status.pending { background: #e67e22; }
+.status.completed { background: #27ae60; }
+
+.priority-high { color: #c0392b; font-weight: bold; }
+.priority-medium { color: #e67e22; font-weight: bold; }
+.priority-low { color: #27ae60; font-weight: bold; }
+
+/* ===== Filter Buttons (Task List) ===== */
+.filters {
+  margin-bottom: 1rem;
+}
+
+.filters button {
+  background: #ecf0f1;
+  color: #2c3e50;
+  margin-top: 0;
+}
+
+.filters button.active {
+  background: #2c3e50;
+  color: white;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #888;
+  font-size: 0.9rem;
+}
