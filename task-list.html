@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow - Task List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>TaskFlow</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="add-task.html">Add Task</a>
+      <a href="task-list.html" class="active">Task List</a>
+      <a href="task-detail.html">Task Detail</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>All Tasks</h2>
+
+      <div class="filters">
+        <button class="active">All</button>
+        <button>Pending</button>
+        <button>Completed</button>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Due Date</th>
+            <th>Priority</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="task-detail.html">Finish project report</a></td>
+            <td>2026-06-20</td>
+            <td class="priority-high">High</td>
+            <td><span class="status pending">Pending</span></td>
+          </tr>
+          <tr>
+            <td><a href="task-detail.html">Buy groceries</a></td>
+            <td>2026-06-15</td>
+            <td class="priority-medium">Medium</td>
+            <td><span class="status pending">Pending</span></td>
+          </tr>
+          <tr>
+            <td><a href="task-detail.html">Clean the house</a></td>
+            <td>2026-06-12</td>
+            <td class="priority-low">Low</td>
+            <td><span class="status completed">Completed</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 TaskFlow. All rights reserved.
+  </footer>
+</body>
+</html>.

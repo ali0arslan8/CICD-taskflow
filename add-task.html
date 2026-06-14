@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow - Add Task</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>TaskFlow</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="add-task.html" class="active">Add Task</a>
+      <a href="task-list.html">Task List</a>
+      <a href="task-detail.html">Task Detail</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="card">
+      <h2>Add New Task</h2>
+      <form>
+        <label for="title">Task Title</label>
+        <input type="text" id="title" name="title" placeholder="Enter task title" required>
+
+        <label for="description">Description</label>
+        <textarea id="description" name="description" placeholder="Enter task description"></textarea>
+
+        <label for="due-date">Due Date</label>
+        <input type="date" id="due-date" name="due-date" required>
+
+        <label for="priority">Priority</label>
+        <select id="priority" name="priority">
+          <option value="high">High</option>
+          <option value="medium" selected>Medium</option>
+          <option value="low">Low</option>
+        </select>
+
+        <button type="submit">Add Task</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 TaskFlow. All rights reserved.
+  </footer>
+</body>
+</html>
